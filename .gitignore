@@ -1,0 +1,77 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Build artifacts
+dist/
+build/
+.cache/
+.next/
+out/
+coverage/
+public/
+.vscode/
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+*.db-wal
+*.db-shm
+*.pid
+*.seed
+*.seeds
+
+# Ignore JetBrains IDE config files
+.idea/
+*.iml
+
+# Ignore local OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignore Swagger UI cache files
+swagger.json
+swagger.yaml
+
+# Ignore Debugging & VS Code files
+.vscode/
+*.swp
+*.swo
+*.sublime-workspace
+
+# Ignore Docker-related files
+docker-compose.override.yml
+.dockerignore
+Dockerfile
+
+# Ignore Serverless Framework files
+.serverless/
+
+# Ignore Temporary files
+tmp/
+temp/
+*.bak
+*.tmp
+*.temp
+.vercel
