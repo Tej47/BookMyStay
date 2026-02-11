@@ -1,64 +1,74 @@
-# BookMyStay
+BookMyStay
+BookMyStay is a full-stack hotel reservation web application designed to streamline the booking process for both users and hotel managers. The platform offers a seamless experience for searching, viewing, and booking hotel rooms while providing robust management tools for administrators.
 
-## Requirements
+🚀 Features
+For Users:
+User Authentication: Secure sign-up and login functionality to manage personal profiles and bookings.
 
-For development, you will only need Node.js and a node global package, Yarn, installed in your environement.
+Hotel Search & Filtering: Find hotels based on location, price, and other preferences.
 
-### Node
-- #### Node installation on Windows
+Room Availability Tracking: Real-time updates on room availability to prevent overbooking.
 
-  Just go on [official Node.js website](https://nodejs.org/) and download the installer.
-Also, be sure to have `git` available in your PATH, `npm` might need it (You can find git [here](https://git-scm.com/)).
+Booking Management: Easily book stays and view booking history in a dedicated dashboard.
 
-- #### Node installation on Ubuntu
+For Administrators:
+Admin Dashboard: Centralized control for managing hotel listings.
 
-  You can install nodejs and npm easily with apt install, just run the following commands.
+Listing Management: Add, update, or remove hotel details, room types, and pricing.
 
-      $ sudo apt install nodejs
-      $ sudo apt install npm
+Booking Overview: Track all reservations made through the platform.
 
-- #### Other Operating Systems
-  You can find more information about the installation on the [official Node.js website](https://nodejs.org/) and the [official NPM website](https://npmjs.org/).
+🛠️ Tech Stack
+Frontend:
 
-If the installation was successful, you should be able to run the following command.
+ReactJS: For building a dynamic and responsive user interface.
 
-    $ node --version
-    v8.11.3
+CSS/Tailwind CSS: For modern and sleek styling.
 
-    $ npm --version
-    6.1.0
+React Router: For seamless navigation.
 
-If you need to update `npm`, you can make it using `npm`! Cool right? After running the following command, just open again the command line and be happy.
+Backend:
 
-    $ npm install npm -g
+Node.js & Express.js: To handle server-side logic and API requests.
 
-###
-### Yarn installation
-  After installing node, this project will need yarn too, so just run the following command.
+MongoDB: A NoSQL database for flexible and scalable data storage.
 
-      $ npm install -g yarn
+JWT (JSON Web Tokens): For secure user authentication and authorization.
 
----
+📦 Installation
+To run this project locally, follow these steps:
 
-## Install
+1. Clone the repository
+Bash
+git clone https://github.com/Tej47/BookMyStay.git
+cd BookMyStay
+2. Setup Backend
+Bash
+cd backend
+npm install
+Create a .env file in the backend directory and add your credentials:
 
-    $ git clone https://github.com/YOUR_USERNAME/PROJECT_TITLE
-    $ cd PROJECT_TITLE
-    $ yarn install
+Code snippet
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+Start the backend server:
 
-## Configure app
+Bash
+npm start
+3. Setup Frontend
+Bash
+cd ../frontend
+npm install
+Start the React development server:
 
-Open `a/nice/path/to/a.file` then edit it with your settings. You will need:
+Bash
+npm start
+🖥️ Usage
+Open your browser and navigate to http://localhost:3000.
 
-- A setting;
-- Another setting;
-- One more setting;
+Register as a new user or log in with existing credentials.
 
-## Running the project
+Browse available hotels and complete a booking.
 
-    $ yarn start
-
-## Simple build for production
-
-    $ yarn build
-
+Access the admin panel (if authorized) to manage hotel listings.
