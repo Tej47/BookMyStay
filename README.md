@@ -1,8 +1,5 @@
-# Project Title
+# BookMyStay
 
-A nice project with a nice description
-
----
 ## Requirements
 
 For development, you will only need Node.js and a node global package, Yarn, installed in your environement.
@@ -64,3 +61,4 @@ Open `a/nice/path/to/a.file` then edit it with your settings. You will need:
 ## Simple build for production
 
     $ yarn build
+
